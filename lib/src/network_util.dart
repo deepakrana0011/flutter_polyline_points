@@ -43,7 +43,7 @@ class NetworkUtil {
       params.addAll({"waypoints": wayPointsString});
     }
     Uri uri =
-        Uri.https("https://tnt.falck.dk/gmap", "maps/api/directions/json", params);
+        Uri.https("tnt.falck.dk/gmap", "maps/api/directions/json", params);
 
     // print('GOOGLE MAPS URL: ' + url);
     var response = await http.get(uri);
